@@ -17,7 +17,7 @@ works as follows
 So, instead of going through that you run generate.py with your project directory as first parameter 
 and existing strings file as second:
 
-```shell
+```bash
 # assuming:  
 # 1 python is installed 
 # 2 you downloaded generate.py and stored it in your Documents folder
@@ -25,6 +25,6 @@ and existing strings file as second:
     
 # this command will generate an new Localizable.strings file in current directory, 
 # with new strings appended at the bottom
-python generate.py . /Supporting\ Files/en.lproj/Localizable.strings 
+python generate.py . ./Supporting\ Files/en.lproj/Localizable.strings 
 ``` 
        
