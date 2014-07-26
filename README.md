@@ -17,10 +17,16 @@ works as follows
 So, instead of going through that you run generate.py with your project directory as first parameter 
 and existing strings file as second:
 
+First get download and make script executable
+```bash
+curl 'https://raw.githubusercontent.com/anlcan/AcbUpdateStrings/master/generate.py' -o /usr/local/bin/generate.py && chmod u+x /usr/local/bin/generate.py
+```
+
+
 ```bash
 # assuming:  
 # 1 python is installed 
-# 2 you downloaded generate.py and stored it in your Documents folder
+# 2 you downloaded generate.py and stored it in your Documents folder 
 # 3 you are in your project root directory
     
 # this command will generate an new Localizable.strings file in current directory, 

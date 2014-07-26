@@ -8,18 +8,12 @@ import subprocess
 # https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/LoadingResources/Strings/Strings.html
 ENCODING = "utf16"
 
-"""
-The first time you run the genstrings tool, it creates a set of new strings files
-for you. Subsequent runs replace the contents of those strings files with the
-current string entries found in your source code. For subsequent runs, it is a
-good idea to save a copy of your current strings files before running genstrings.
-You can then diff the new and old versions to determine which strings were
-added to (or changed in) your project. You can then use this information to
-update any already localized versions of your strings files, rather than replacing
-those files and localizing them again
-"""
+
 def main(source_directory, original=None):
 
+    """
+    Finds localized strings in source files located in the source_directory, and updats original strings file
+    """
     input_file = codecs.open(original, 'r', encoding=ENCODING)
 
     keys = dict()
