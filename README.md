@@ -23,8 +23,8 @@ curl 'https://raw.githubusercontent.com/anlcan/AcbUpdateStrings/master/generate.
 Second, go to your project directory and run generate.py with source folder as first argument and existing localizable strings file as second
 
 ```bash   
-# this command will generate an new Localizable.strings file in current directory, 
+# this command will generate a new Localizable.strings file in current directory, 
 # with new strings appended at the bottom
-python generate.py . ./Supporting\ Files/en.lproj/Localizable.strings 
+generate.py . ./Supporting\ Files/en.lproj/Localizable.strings 
 ``` 
        
