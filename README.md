@@ -29,5 +29,5 @@ generate.py . ./Supporting\ Files/en.lproj/Localizable.strings
 ``` 
        
 For more complete solution, you can check 
-- [Localizable Strings merge](http://www.loc-suite.org/) paid app
+- [Localizable Strings merge](http://www.delitestudio.com/app/localizable-strings-merge/)
 - [Localization Suite] (http://www.loc-suite.org/)
