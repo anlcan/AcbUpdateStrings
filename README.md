@@ -17,14 +17,14 @@ works as follows
 So, instead of going through that you run generate.py with your project directory as first parameter 
 and existing strings file as second:
 
-    ```
-    # assuming:  
-    # 1 python is installed 
-    # 2 you downloaded generate.py and stored it in your Documents folder
-    # 3 you are in your project root directory
+```shell
+# assuming:  
+# 1 python is installed 
+# 2 you downloaded generate.py and stored it in your Documents folder
+# 3 you are in your project root directory
     
-    # this command will generate an new Localizable.strings file in current directory, 
-    # with new strings appended at the bottom
-    python generate.py . /Supporting\ Files/en.lproj/Localizable.strings 
-    ``` 
+# this command will generate an new Localizable.strings file in current directory, 
+# with new strings appended at the bottom
+python generate.py . /Supporting\ Files/en.lproj/Localizable.strings 
+``` 
        
