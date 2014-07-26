@@ -14,21 +14,15 @@ works as follows
     those files and localizing them again
     
    
-So, instead of going through that you run generate.py with your project directory as first parameter 
-and existing strings file as second:
+So, instead of going through that you can run generate.py to upate your localizable strings
 
-First get download and make script executable
+First download and make *generate.py* script executable
 ```bash
 curl 'https://raw.githubusercontent.com/anlcan/AcbUpdateStrings/master/generate.py' -o /usr/local/bin/generate.py && chmod u+x /usr/local/bin/generate.py
 ```
+Second, go to your project directory and run generate.py with source folder as first argument and existing localizable strings file as second
 
-
-```bash
-# assuming:  
-# 1 python is installed 
-# 2 you downloaded generate.py and stored it in your Documents folder 
-# 3 you are in your project root directory
-    
+```bash   
 # this command will generate an new Localizable.strings file in current directory, 
 # with new strings appended at the bottom
 python generate.py . ./Supporting\ Files/en.lproj/Localizable.strings 
