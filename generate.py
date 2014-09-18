@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 __author__ = 'anlcan'
 
 from sys import argv
@@ -70,4 +72,10 @@ def main(source_directory, original=None):
 
 
 if __name__ == "__main__":
-    main(argv[1], argv[2])
+    if argv.__len__() != 2 or not argv[1] or not argv[2]:
+        print """
+                missing arguments
+                usage : generate.py <path_to_folder_with_source_files> <path_to_Localizable.strings_file>
+              """
+    else:
+        main(argv[1], argv[2])
