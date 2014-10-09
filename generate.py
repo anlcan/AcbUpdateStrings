@@ -81,7 +81,7 @@ def main(source_directory, original=None):
     print ("# missing keys follow")
 
     for [l,c] in missing:
-        line = '/* ' + c + ' */\n"' + l + '" = "";\n'
+        line = '/* ' + c + ' */\n"' + l + '" = "";\n\n'
         print line
         output_file.write(unicode(line, "utf8"))
 
